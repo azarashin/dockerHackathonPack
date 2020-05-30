@@ -13,29 +13,34 @@
 
 ## 2. ディレクトリ構造
 
-|-- mount
-|   |-- db (mysql 関連のマウント先)
-|   |    |-- data (db 本体が格納される)
-|   |    |   |-- .gitignore (data ディレクトリをリポジトリに残すためだけに設置。)
-|   |    |-- my.cnf (文字コードなどを設定する)
-|   |    |-- sql (データベースの初期化関連)
-|   |         |-- 001-create-tables.sql (初期化時に実行するクエリを格納)
-|   |         |-- init-database.sh　(初期化処理のためのスクリプト)
-|   |-- nodered
-|   |    |-- settings.js 
-|   |    |-- package.json
-|   |    |-- node_modules (mysql やemail など最低限のノードを格納) 
-|   |    |-- (フローファイル、暗号化済み認証情報)
-|   |-- nginx
-|   |    |-- public
-|   |         |-- index.html
-|   |-- superset
-|-- docker-compose.yml
-|-- .env
-|-- Readme.md
-|-- dockerfile
-    |-- superset
-        |-- Dockerfile, etc...
+|-- mount  
+|　|-- db (mysql 関連のマウント先)  
+|　|　|-- data (db 本体が格納される)  
+|　|　|　|-- .gitignore (data ディレクトリをリポジトリに残すためだけに設置。)  
+|　|　|  
+|　|　|-- my.cnf (文字コードなどを設定する)  
+|　|　|-- sql (データベースの初期化関連)  
+|　|　　|-- 001-create-tables.sql (初期化時に実行するクエリを格納)  
+|　|　　|-- init-database.sh　(初期化処理のためのスクリプト)  
+|　|  
+|　|-- nodered  
+|　|　|-- settings.js  
+|　|　|-- package.json   
+|　|　|-- node_modules (mysql やemail など最低限のノードを格納)   
+|　|　|-- (フローファイル、暗号化済み認証情報)  
+|　|  
+|　|-- nginx  
+|　|　|-- public  
+|　|　|-- index.html  
+|　|  
+|　|-- superset  
+|  
+|-- docker-compose.yml  
+|-- .env  
+|-- Readme.md  
+|-- dockerfile  
+　　|-- superset  
+　　　　|-- Dockerfile, etc...  
 
 ## 3. 構築手順
 
@@ -48,7 +53,7 @@
 | common     | CONTAINER_BASE_NAME | コンテナの頭につけるプロジェクト名                      |
 | node-red   | NODE_RED_PORT       | コンテナ外からアクセスするときのnode-red のポート番号   |
 | node-red   | NODE_RED_FLOW       | 最初にアクセスされるフローのフロー名                    |
-|node-red|NODE_RED_CREDENTIAL_SECRET||
+|node-red|NODE_RED_CREDENTIAL_SECRET|認証文字列（nodered のフローで記録するパスワード等の暗号化に使用）|
 | mysql      | MYSQL_PORT          | コンテナ外からアクセスするときのmysql のポート番号      |
 | mysql      | MYSQL_DATABASE      | 最初に生成するデータベース名                            |
 | mysql      | MYSQL_ROOT_PASSWORD | root ユーザの初期パスワード                             |
