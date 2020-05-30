@@ -34,8 +34,8 @@
 |-- .env
 |-- Readme.md
 |-- dockerfile
-     |-- superset
-          |-- Dockerfile, etc...
+    |-- superset
+        |-- Dockerfile, etc...
 
 ## 3. 構築手順
 
