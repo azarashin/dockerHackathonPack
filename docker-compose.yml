@@ -61,3 +61,10 @@ services:
     volumes:
       - ./mount/superset:/var/lib/superset
 
+  metabase:
+    container_name: ${CONTAINER_BASE_NAME}_metabase
+    build: ./dockerfile/metabase
+    ports:
+      - ${METABASE_PORT}:3000
+    volumes:
+      - ./mount/metabase:/metabase
