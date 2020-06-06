@@ -78,6 +78,23 @@ sudo docker exec -it ${CONTAINER_BASE_NAME}_superset superset-init
 
 ユーザ名やパスワードその他もろもろ聞かれるので設定する。
 
+### 3.4. metabase のアカウント初期化
+
+![metabase初期化画面](.\images\metabase000.png)
+
+最初にアクセスすると、上記画面のように2 Add your data の画面で色々聞かれるので、以下の内容をそれぞれ入力する。
+
+| 項目              | 概要                               |
+| ----------------- | ---------------------------------- |
+| (データベース)    | MySQL を選択する                   |
+| Name              | 好きな名前を入力する               |
+| Host              | db で固定                          |
+| Port              | 3306 で固定                        |
+| Database name     | 環境変数 MYSQL_DATABASE に合わせる |
+| Database username | 環境変数MYSQL_USER に合わせる      |
+| Database password | 環境変数MYSQL_PASSWORD に合わせる  |
+
+
 ## 4. 注意事項
 
 ### 4.1. NodeRED のmysql ノードからmysql database にアクセスする場合
