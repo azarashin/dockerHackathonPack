@@ -33,14 +33,13 @@
 |　|　|-- public  
 |　|　|-- index.html  
 |　|  
-|　|-- superset  
+|　|-- superset
+|　|  
+|　|-- metabase
 |  
 |-- docker-compose.yml  
 |-- .env  
 |-- Readme.md  
-|-- dockerfile  
-　　|-- superset  
-　　　　|-- Dockerfile, etc...  
 
 ## 3. 構築手順
 
@@ -62,18 +61,53 @@
 | phpMyAdmin | PMA_PORT            | コンテナ外からアクセスするときのphpMyAdmin のポート番号 |
 | phpMyAdmin | PMA_USER            | mysql にアクセスするためのユーザ名。MYSQL_USER の設定値と同じにしておく |
 | phpMyAdmin | PMA_PASSWORD        | 上記ユーザ名に対する初期パスワード。MYSQL_PASSWORD の設定値と同じにしておく。 |
+| superset      | SUPERSET_PORT          | コンテナ外からアクセスするときのsuperset のポート番号      |
+| metabase      | METABASE_PORT          | コンテナ外からアクセスするときのmetabase のポート番号      |
 | nginx      | NGINX_PORT          | コンテナ外からアクセスするときのnginx のポート番号      |
 
 ### 3.2. コンテナ群の生成及び起動
 
 ```
-sudo docker compose up -d
+sudo docker-compose up -d
 ```
 
-### 3.3. superset のアカウント初期化
+### 3.3. superset の初期化
+
+#### 3.3.1. アカウントを初期化する
 
 ```
-sudo docker exec -it ${CONTAINER_BASE_NAME}_superset superset-init
+docker-compose exec superset superset fab create-admin --username (adminユーザ名) --firstname (名前) --lastname (苗字) --email (メールアドレス) --password (adminパスワード)
+```
+
+- (adminユーザ名)
+- (名前)
+- (苗字)
+- (メールアドレス)
+- (adminパスワード)
+
+の部分は適宜置き換えてください。
+
+例：
+```
+docker-compose exec superset superset fab create-admin --username admin --firstname name --lastname sample --email sample@sample.com --password password
+```
+
+#### 3.3.2. DBを初期化する
+
+```
+docker-compose exec superset superset db upgrade
+```
+
+#### 3.3.3. サンプルを読みこむ（この手順はスキップ可）
+
+```
+docker-compose exec superset superset load_examples
+```
+
+#### 3.3.4. ロールを初期化する
+
+```
+docker-compose exec superset superset init
 ```
 
 ユーザ名やパスワードその他もろもろ聞かれるので設定する。

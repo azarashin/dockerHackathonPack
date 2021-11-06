@@ -55,15 +55,15 @@ services:
 
   superset:
     container_name: ${CONTAINER_BASE_NAME}_superset
-    build: ./dockerfile/superset
+    image: apache/superset
     ports:
-      - 8088:8088
+      - ${SUPERSET_PORT}:8088
     volumes:
       - ./mount/superset:/var/lib/superset
 
   metabase:
     container_name: ${CONTAINER_BASE_NAME}_metabase
-    build: ./dockerfile/metabase
+    image: metabase/metabase
     ports:
       - ${METABASE_PORT}:3000
     volumes:
