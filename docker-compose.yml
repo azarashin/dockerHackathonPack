@@ -1,6 +1,15 @@
 version: "3.0"
 
 services:
+  ubuntu:
+    build: 
+      context: dockerfile/ubuntu
+      dockerfile: Dockerfile
+    container_name: ${CONTAINER_BASE_NAME}_ubuntu
+    restart: always
+    volumes:
+      - ./mount/ubuntu:/data
+
   nodered:
     image: nodered/node-red:latest
     container_name: ${CONTAINER_BASE_NAME}_nodered_host
