@@ -1,0 +1,487 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "css": "",
+                "dashboard_title": "\u8ca9\u58f2\u4fa1\u683c\u5206\u6790",
+                "description": null,
+                "json_metadata": "{\"timed_refresh_immune_slices\": [], \"expanded_slices\": {}, \"refresh_frequency\": 0, \"default_filters\": \"{}\", \"color_scheme\": null, \"remote_id\": 1}",
+                "position_json": "{\"CHART-7yk93ZcMeq\":{\"children\":[],\"id\":\"CHART-7yk93ZcMeq\",\"meta\":{\"chartId\":2,\"height\":50,\"sliceName\":\"\\u8ca9\\u58f2\\u4fa1\\u683c\\u5206\\u5e03(10,000\\u5186\\u672a\\u6e80)\",\"uuid\":\"a5973195-eb85-468d-9816-98e6c3e7b6dc\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-wVlOxf3Dxb\"],\"type\":\"CHART\"},\"CHART-8QszSQJ1zw\":{\"children\":[],\"id\":\"CHART-8QszSQJ1zw\",\"meta\":{\"chartId\":4,\"height\":50,\"sliceName\":\"\\u8ca9\\u58f2\\u4fa1\\u683c\\u5206\\u5e03(\\u5168\\u7bc4\\u56f2)\",\"uuid\":\"ff15dfbd-f505-4f78-9082-bc629b0e6b06\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-wVlOxf3Dxb\"],\"type\":\"CHART\"},\"CHART-V-4pYYts_E\":{\"children\":[],\"id\":\"CHART-V-4pYYts_E\",\"meta\":{\"chartId\":5,\"height\":50,\"sliceName\":\"\\u8ca9\\u58f2\\u4fa1\\u683c10,000\\u4ee5\\u4e0a\\u306e\\u88fd\\u54c1\",\"uuid\":\"d4bb185e-80ba-4c93-9041-5e5762991763\",\"width\":8},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-_5DZ4hDHi\"],\"type\":\"CHART\"},\"CHART-nm5mkNOJBH\":{\"children\":[],\"id\":\"CHART-nm5mkNOJBH\",\"meta\":{\"chartId\":3,\"height\":50,\"sliceName\":\"\\u8ca9\\u58f2\\u4fa1\\u683c\\u5206\\u5e03(10,000\\u5186\\u4ee5\\u4e0a)\",\"uuid\":\"2a86944f-1990-4055-afa8-f9d58dae857f\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-_5DZ4hDHi\"],\"type\":\"CHART\"},\"CHART-yYFA_eC4lU\":{\"children\":[],\"id\":\"CHART-yYFA_eC4lU\",\"meta\":{\"chartId\":1,\"height\":50,\"sliceName\":\"\\u8ca9\\u58f2\\u4fa1\\u683c\\u5206\\u5e03(10,000\\u5186\\u672a\\u6e80\\u3001\\u6709\\u511f)\",\"uuid\":\"2ed7ff20-5493-4c28-95a4-b97e4dd182ed\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-wVlOxf3Dxb\"],\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"ROW-wVlOxf3Dxb\",\"ROW-_5DZ4hDHi\"],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"\\u8ca9\\u58f2\\u4fa1\\u683c\\u5206\\u6790\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-_5DZ4hDHi\":{\"children\":[\"CHART-nm5mkNOJBH\",\"CHART-V-4pYYts_E\"],\"id\":\"ROW-_5DZ4hDHi\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-wVlOxf3Dxb\":{\"children\":[\"CHART-8QszSQJ1zw\",\"CHART-7yk93ZcMeq\",\"CHART-yYFA_eC4lU\"],\"id\":\"ROW-wVlOxf3Dxb\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.product",
+                            "datasource_type": "table",
+                            "id": 1,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": null, \"expressionType\": \"SQL\", \"filterOptionName\": \"filter_2nrr5vie4qe_fnhufkr39m5\", \"isExtra\": false, \"isNew\": false, \"operator\": null, \"sqlExpression\": \"price < 5000 and price > 0\", \"subject\": null}], \"all_columns_x\": [\"price\"], \"color_scheme\": \"supersetColors\", \"datasource\": \"1__table\", \"extra_form_data\": {}, \"granularity_sqla\": \"release_date\", \"groupby\": [], \"link_length\": \"50\", \"row_limit\": 50000, \"slice_id\": 1, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"histogram\", \"remote_id\": 1, \"datasource_name\": \"product\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"granularity\":\"release_date\",\"filters\":[],\"extras\":{\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"(price < 5000 and price > 0)\"},\"applied_time_extras\":{},\"columns\":[],\"metrics\":[],\"annotation_layers\":[],\"row_limit\":50000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u8ca9\u58f2\u4fa1\u683c\u5206\u5e03(5,000\u5186\u672a\u6e80\u3001\u6709\u511f)",
+                            "viz_type": "histogram"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.product",
+                            "datasource_type": "table",
+                            "id": 2,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"5000\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_mwfa5vawlv_wzlgh3p2q1\", \"isExtra\": false, \"isNew\": false, \"operator\": \"<\", \"operatorId\": \"LESS_THAN\", \"sqlExpression\": null, \"subject\": \"price\"}], \"all_columns_x\": [\"price\"], \"color_scheme\": \"supersetColors\", \"datasource\": \"1__table\", \"extra_form_data\": {}, \"granularity_sqla\": \"release_date\", \"groupby\": [], \"link_length\": \"50\", \"row_limit\": 50000, \"slice_id\": 2, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"histogram\", \"remote_id\": 2, \"datasource_name\": \"product\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"granularity\":\"release_date\",\"filters\":[{\"col\":\"price\",\"op\":\"<\",\"val\":\"5000\"}],\"extras\":{\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[],\"metrics\":[],\"annotation_layers\":[],\"row_limit\":50000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u8ca9\u58f2\u4fa1\u683c\u5206\u5e03(5,000\u5186\u672a\u6e80)",
+                            "viz_type": "histogram"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.product",
+                            "datasource_type": "table",
+                            "id": 3,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"5000\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_k3vn3pmioc_v5cp8hm119\", \"isExtra\": false, \"isNew\": false, \"operator\": \">=\", \"operatorId\": \"GREATER_THAN_OR_EQUAL\", \"sqlExpression\": null, \"subject\": \"price\"}], \"all_columns_x\": [\"price\"], \"color_scheme\": \"supersetColors\", \"datasource\": \"1__table\", \"extra_form_data\": {}, \"granularity_sqla\": \"release_date\", \"groupby\": [], \"link_length\": \"50\", \"row_limit\": 50000, \"slice_id\": 3, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"histogram\", \"remote_id\": 3, \"datasource_name\": \"product\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"granularity\":\"release_date\",\"filters\":[{\"col\":\"price\",\"op\":\">=\",\"val\":\"5000\"}],\"extras\":{\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[],\"metrics\":[],\"annotation_layers\":[],\"row_limit\":50000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u8ca9\u58f2\u4fa1\u683c\u5206\u5e03(5,000\u5186\u4ee5\u4e0a)",
+                            "viz_type": "histogram"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.product",
+                            "datasource_type": "table",
+                            "id": 4,
+                            "params": "{\"adhoc_filters\": [], \"all_columns_x\": [\"price\"], \"color_scheme\": \"supersetColors\", \"datasource\": \"1__table\", \"extra_form_data\": {}, \"granularity_sqla\": \"release_date\", \"groupby\": [], \"link_length\": \"50\", \"row_limit\": 50000, \"slice_id\": 4, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"histogram\", \"remote_id\": 4, \"datasource_name\": \"product\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"granularity\":\"release_date\",\"filters\":[],\"extras\":{\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[],\"metrics\":[],\"annotation_layers\":[],\"row_limit\":50000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u8ca9\u58f2\u4fa1\u683c\u5206\u5e03(\u5168\u7bc4\u56f2)",
+                            "viz_type": "histogram"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.product",
+                            "datasource_type": "table",
+                            "id": 5,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"5000\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_z3phu04wnyj_irecapyu0cl\", \"isExtra\": false, \"isNew\": false, \"operator\": \">=\", \"operatorId\": \"GREATER_THAN_OR_EQUAL\", \"sqlExpression\": null, \"subject\": \"price\"}], \"all_columns\": [\"id\", \"title\", \"price\", \"price_country\", \"publisher\", \"developer\", \"release_date\", \"status_flag\", \"review_type\", \"review_count\", \"rating_value\"], \"color_pn\": true, \"datasource\": \"1__table\", \"extra_form_data\": {}, \"granularity_sqla\": \"release_date\", \"groupby\": [], \"order_by_cols\": [], \"order_desc\": true, \"percent_metrics\": [], \"query_mode\": \"raw\", \"row_limit\": 10000, \"server_page_length\": 10, \"show_cell_bars\": true, \"slice_id\": 5, \"table_timestamp_format\": \"smart_date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"table\", \"remote_id\": 5, \"datasource_name\": \"product\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"granularity\":\"release_date\",\"filters\":[{\"col\":\"price\",\"op\":\">=\",\"val\":\"5000\"}],\"extras\":{\"time_grain_sqla\":\"P1D\",\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"id\",\"title\",\"price\",\"price_country\",\"publisher\",\"developer\",\"release_date\",\"status_flag\",\"review_type\",\"review_count\",\"rating_value\"],\"orderby\":[],\"annotation_layers\":[],\"row_limit\":10000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{},\"post_processing\":[]}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u8ca9\u58f2\u4fa1\u683c5,000\u5186\u4ee5\u4e0a\u306e\u88fd\u54c1",
+                            "viz_type": "table"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "id",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 1,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER(11)",
+                            "uuid": "07ee1901-5c54-48e6-b0be-1b6b1487c578",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "status_flag",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 2,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "CHAR(16)",
+                            "uuid": "31294115-bda4-4773-bece-686c5c12d40a",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "title",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 3,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "CHAR(255)",
+                            "uuid": "56ffcd86-b486-4de8-8c2f-0eafe91ae32a",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "publisher",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 4,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "CHAR(255)",
+                            "uuid": "d64d84f9-bdc2-49e1-a469-ff43ff9165ff",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "developer",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 5,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "CHAR(255)",
+                            "uuid": "3f013be4-a72a-48f2-8b68-d4e13981b560",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "release_date",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 6,
+                            "is_active": null,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DATETIME",
+                            "uuid": "8e5d391c-7f25-4335-8bfe-15657cae2f87",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "price",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 7,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "FLOAT",
+                            "uuid": "19d5a623-e5e0-4213-95ae-f66b0137af8a",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "price_country",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 8,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "CHAR(32)",
+                            "uuid": "aaea1838-7864-4e4e-acc9-e7220a6c2b88",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "review_type",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 9,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "CHAR(32)",
+                            "uuid": "6a433b1c-c773-4729-992b-b8c5628bd25f",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "review_count",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 10,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER(11)",
+                            "uuid": "b0edad60-99f0-42ac-85fb-ec15044ea777",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "rating_value",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 11,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER(11)",
+                            "uuid": "11c8a2a6-904a-450f-afa9-ae9f673e89c2",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "max_rating",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 12,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER(11)",
+                            "uuid": "92623e72-421c-484d-bc68-97f096392853",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "column_name": "min_rating",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 13,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER(11)",
+                            "uuid": "fa068687-a0d9-4ebd-938a-2006d75b2500",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:07:38"
+                            },
+                            "column_name": "release_month",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T00:04:39"
+                            },
+                            "description": null,
+                            "expression": "MONTH(release_date)",
+                            "extra": "{\"warning_markdown\":null}",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 15,
+                            "is_active": null,
+                            "is_dttm": null,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "NUMERIC",
+                            "uuid": "1c5fe3e5-3a6e-44be-b906-293ec90f7e64",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 2,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": "release_date",
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T00:03:44"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-06T23:00:00"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "extra": "{\"warning_markdown\":\"\"}",
+                            "id": 1,
+                            "metric_name": "count",
+                            "metric_type": null,
+                            "table_id": 1,
+                            "uuid": "1cc4c907-944f-4a0c-a40a-d6b9de307aae",
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 1, \"database_name\": \"MySQL\"}",
+                "schema": "db_steam_product",
+                "sql": "",
+                "table_name": "product",
+                "template_params": null
+            }
+        }
+    ]
+}

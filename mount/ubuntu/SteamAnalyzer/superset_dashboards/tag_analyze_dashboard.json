@@ -1,0 +1,440 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "css": "",
+                "dashboard_title": "\u30bf\u30b0\u5206\u6790",
+                "description": null,
+                "json_metadata": "{\"timed_refresh_immune_slices\": [], \"expanded_slices\": {}, \"refresh_frequency\": 0, \"default_filters\": \"{\\\"8\\\": {\\\"tag\\\": [\\\"Board Game\\\"], \\\"__time_range\\\": \\\"No filter\\\"}}\", \"color_scheme\": null, \"filter_scopes\": {\"8\": {\"tag\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"__time_range\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}}}, \"remote_id\": 3}",
+                "position_json": "{\"CHART-BNIHDrIuvr\":{\"children\":[],\"id\":\"CHART-BNIHDrIuvr\",\"meta\":{\"chartId\":9,\"height\":50,\"sliceName\":\"\\u30bf\\u30b0\\u5225\\u8ca9\\u58f2\\u4fa1\\u683c\\u5206\\u5e03(\\u5168\\u7bc4\\u56f2)\",\"uuid\":\"95767cc7-66d2-4bb3-90fd-7cc521815319\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-gD-4zVSqRF\"],\"type\":\"CHART\"},\"CHART-M4TT1p-9QV\":{\"children\":[],\"id\":\"CHART-M4TT1p-9QV\",\"meta\":{\"chartId\":10,\"height\":50,\"sliceName\":\"\\u30bf\\u30b0\\u5225\\u8ca9\\u58f2\\u4fa1\\u683c\\u5206\\u5e03\",\"uuid\":\"47866029-a786-4ab6-9f88-d8c99b9204db\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-gD-4zVSqRF\"],\"type\":\"CHART\"},\"CHART-iC-tw8q1X6\":{\"children\":[],\"id\":\"CHART-iC-tw8q1X6\",\"meta\":{\"chartId\":14,\"height\":50,\"sliceName\":\"\\u30bf\\u30b0\\u5225\\u30ec\\u30d3\\u30e5\\u30fc\\u6570\\u3068\\u4fa1\\u683c\\u306e\\u95a2\\u4fc2\",\"uuid\":\"9ed5674d-6c27-4f5b-adb2-8be350b64213\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-uZmSGxbh3g\"],\"type\":\"CHART\"},\"CHART-iZsNjS6Ay2\":{\"children\":[],\"id\":\"CHART-iZsNjS6Ay2\",\"meta\":{\"chartId\":11,\"height\":50,\"sliceName\":\"\\u30bf\\u30b0\\u5225\\u8ca9\\u58f2\\u4fa1\\u683c\\u5206\\u5e03(\\u7bb1\\u3072\\u3052)\",\"uuid\":\"8bfb0abc-c449-4db8-ba9d-45b383a1c2ae\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-uZmSGxbh3g\"],\"type\":\"CHART\"},\"CHART-jr7iyQZSlE\":{\"children\":[],\"id\":\"CHART-jr7iyQZSlE\",\"meta\":{\"chartId\":13,\"height\":50,\"sliceName\":\"\\u30bf\\u30b0\\u5225\\u5e74\\u9593\\u767a\\u58f2\\u30bf\\u30a4\\u30c8\\u30eb\\u6570\\u63a8\\u79fb\",\"uuid\":\"abd6c280-9ccc-4ea8-bdd6-061615424fbe\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-uZmSGxbh3g\"],\"type\":\"CHART\"},\"CHART-vF9xvvcZFA\":{\"children\":[],\"id\":\"CHART-vF9xvvcZFA\",\"meta\":{\"chartId\":8,\"height\":29,\"sliceName\":\"\\u30bf\\u30b0\\u30d5\\u30a3\\u30eb\\u30bf\",\"uuid\":\"6faf6ece-93a6-4b2a-821e-12ade2e795ac\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-gD-4zVSqRF\"],\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"ROW-gD-4zVSqRF\",\"ROW-uZmSGxbh3g\"],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"\\u30bf\\u30b0\\u5206\\u6790\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-gD-4zVSqRF\":{\"children\":[\"CHART-vF9xvvcZFA\",\"CHART-BNIHDrIuvr\",\"CHART-M4TT1p-9QV\"],\"id\":\"ROW-gD-4zVSqRF\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-uZmSGxbh3g\":{\"children\":[\"CHART-iZsNjS6Ay2\",\"CHART-jr7iyQZSlE\",\"CHART-iC-tw8q1X6\"],\"id\":\"ROW-uZmSGxbh3g\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.tag",
+                            "datasource_type": "table",
+                            "id": 8,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"6__table\", \"date_filter\": true, \"extra_form_data\": {}, \"filter_configs\": [{\"asc\": true, \"clearable\": true, \"column\": \"tag\", \"defaultValue\": \"Board Game\", \"key\": \"ZcR5ia2cn\", \"multiple\": true, \"searchAllOptions\": false}], \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"filter_box\", \"remote_id\": 8, \"datasource_name\": \"tag\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":6,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"filters\":[],\"extras\":{\"time_grain_sqla\":\"P1D\",\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[],\"metrics\":[],\"annotation_layers\":[],\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u30bf\u30b0\u30d5\u30a3\u30eb\u30bf",
+                            "viz_type": "filter_box"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.TagPriceReview",
+                            "datasource_type": "table",
+                            "id": 9,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"JPY\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_b8o11oh4zcg_q1qubev3av\", \"isExtra\": false, \"isNew\": false, \"operator\": \"==\", \"operatorId\": \"EQUALS\", \"sqlExpression\": null, \"subject\": \"price_country\"}], \"all_columns\": [], \"color_pn\": true, \"datasource\": \"3__table\", \"extra_form_data\": {}, \"granularity_sqla\": \"release_date\", \"groupby\": [\"tag\"], \"metrics\": [{\"aggregate\": \"AVG\", \"column\": {\"certification_details\": null, \"certified_by\": null, \"column_name\": \"price\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 26, \"is_certified\": false, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"FLOAT\", \"type_generic\": 0, \"verbose_name\": null, \"warning_markdown\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"AVG(price)\", \"optionName\": \"metric_ig345ktqlx_bhwl4ng8dg\", \"sqlExpression\": null}], \"order_by_cols\": [], \"order_desc\": true, \"percent_metrics\": [], \"query_mode\": \"aggregate\", \"row_limit\": 10000, \"server_page_length\": 10, \"show_cell_bars\": true, \"slice_id\": 9, \"table_timestamp_format\": \"smart_date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"table\", \"remote_id\": 9, \"datasource_name\": \"TagPriceReview\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":3,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"granularity\":\"release_date\",\"filters\":[{\"col\":\"price_country\",\"op\":\"==\",\"val\":\"JPY\"}],\"extras\":{\"time_grain_sqla\":\"P1D\",\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"tag\"],\"metrics\":[{\"aggregate\":\"AVG\",\"column\":{\"certification_details\":null,\"certified_by\":null,\"column_name\":\"price\",\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"id\":26,\"is_certified\":false,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"FLOAT\",\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":false,\"isNew\":false,\"label\":\"AVG(price)\",\"optionName\":\"metric_ig345ktqlx_bhwl4ng8dg\",\"sqlExpression\":null}],\"orderby\":[[{\"aggregate\":\"AVG\",\"column\":{\"certification_details\":null,\"certified_by\":null,\"column_name\":\"price\",\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"id\":26,\"is_certified\":false,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"FLOAT\",\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":false,\"isNew\":false,\"label\":\"AVG(price)\",\"optionName\":\"metric_ig345ktqlx_bhwl4ng8dg\",\"sqlExpression\":null},false]],\"annotation_layers\":[],\"row_limit\":10000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{},\"post_processing\":[]}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u30bf\u30b0\u5225\u8ca9\u58f2\u4fa1\u683c\u5206\u5e03(\u5168\u7bc4\u56f2)",
+                            "viz_type": "table"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.TagPriceReview",
+                            "datasource_type": "table",
+                            "id": 10,
+                            "params": "{\"adhoc_filters\": [], \"all_columns_x\": [\"price\"], \"color_scheme\": \"supersetColors\", \"cumulative\": false, \"datasource\": \"3__table\", \"extra_form_data\": {}, \"granularity_sqla\": \"release_date\", \"groupby\": [\"tag\"], \"link_length\": \"25\", \"row_limit\": 10000, \"show_legend\": true, \"slice_id\": 10, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"histogram\", \"x_axis_label\": \"price\", \"y_axis_label\": \"count\", \"remote_id\": 10, \"datasource_name\": \"TagPriceReview\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":3,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"granularity\":\"release_date\",\"filters\":[],\"extras\":{\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"tag\"],\"metrics\":[],\"annotation_layers\":[],\"row_limit\":10000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u30bf\u30b0\u5225\u8ca9\u58f2\u4fa1\u683c\u5206\u5e03",
+                            "viz_type": "histogram"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.TagPriceReview",
+                            "datasource_type": "table",
+                            "id": 11,
+                            "params": "{\"adhoc_filters\": [], \"color_scheme\": \"supersetColors\", \"columns\": [], \"datasource\": \"3__table\", \"date_format\": \"smart_date\", \"extra_form_data\": {}, \"granularity_sqla\": \"release_date\", \"groupby\": [\"tag\"], \"metrics\": [{\"aggregate\": \"AVG\", \"column\": {\"certification_details\": null, \"certified_by\": null, \"column_name\": \"price\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 26, \"is_certified\": false, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"FLOAT\", \"type_generic\": 0, \"verbose_name\": null, \"warning_markdown\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"AVG(price)\", \"optionName\": \"metric_o75inikc9oc_5jo45n9nefi\", \"sqlExpression\": null}], \"number_format\": \"SMART_NUMBER\", \"slice_id\": 11, \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"box_plot\", \"whiskerOptions\": \"Tukey\", \"x_axis_title_margin\": 15, \"x_ticks_layout\": \"auto\", \"y_axis_title_margin\": 15, \"y_axis_title_position\": \"Left\", \"remote_id\": 11, \"datasource_name\": \"TagPriceReview\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":3,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"granularity\":\"release_date\",\"filters\":[],\"extras\":{\"time_grain_sqla\":\"P1D\",\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"release_date\",\"tag\"],\"metrics\":[{\"aggregate\":\"AVG\",\"column\":{\"certification_details\":null,\"certified_by\":null,\"column_name\":\"price\",\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"id\":26,\"is_certified\":false,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"FLOAT\",\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":false,\"isNew\":false,\"label\":\"AVG(price)\",\"optionName\":\"metric_o75inikc9oc_5jo45n9nefi\",\"sqlExpression\":null}],\"annotation_layers\":[],\"series_columns\":[\"tag\"],\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{},\"post_processing\":[{\"operation\":\"boxplot\",\"options\":{\"whisker_type\":\"tukey\",\"groupby\":[\"tag\"],\"metrics\":[\"AVG(price)\"]}}]}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u30bf\u30b0\u5225\u8ca9\u58f2\u4fa1\u683c\u5206\u5e03(\u7bb1\u3072\u3052)",
+                            "viz_type": "box_plot"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.TagPriceReview",
+                            "datasource_type": "table",
+                            "id": 13,
+                            "params": "{\"adhoc_filters\": [], \"annotation_layers\": [], \"bottom_margin\": \"auto\", \"color_scheme\": \"supersetColors\", \"comparison_type\": \"values\", \"datasource\": \"3__table\", \"extra_form_data\": {}, \"granularity_sqla\": \"release_date\", \"groupby\": [\"tag\"], \"left_margin\": \"auto\", \"line_interpolation\": \"linear\", \"metrics\": [\"count\"], \"order_desc\": true, \"rich_tooltip\": true, \"rolling_type\": \"None\", \"row_limit\": 10000, \"send_time_range\": true, \"show_brush\": \"auto\", \"show_legend\": true, \"show_markers\": true, \"slice_id\": 13, \"time_grain_sqla\": \"P1Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"line\", \"x_axis_format\": \"smart_date\", \"x_ticks_layout\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 13, \"datasource_name\": \"TagPriceReview\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":3,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"granularity\":\"release_date\",\"filters\":[],\"extras\":{\"time_grain_sqla\":\"P1Y\",\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"tag\"],\"metrics\":[\"count\"],\"annotation_layers\":[],\"row_limit\":10000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u30bf\u30b0\u5225\u5e74\u9593\u767a\u58f2\u30bf\u30a4\u30c8\u30eb\u6570\u63a8\u79fb",
+                            "viz_type": "line"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "db_steam_product.TagPriceReview",
+                            "datasource_type": "table",
+                            "id": 14,
+                            "params": "{\"adhoc_filters\": [], \"color_scheme\": \"supersetColors\", \"datasource\": \"3__table\", \"date_format\": \"smart_date\", \"extra_form_data\": {}, \"granularity_sqla\": \"release_date\", \"groupby\": [\"tag\"], \"innerRadius\": 30, \"label_type\": \"key\", \"labels_outside\": true, \"legendOrientation\": \"top\", \"legendType\": \"scroll\", \"metric\": \"count\", \"number_format\": \"SMART_NUMBER\", \"outerRadius\": 70, \"row_limit\": 10000, \"show_labels\": true, \"show_labels_threshold\": 5, \"show_legend\": true, \"slice_id\": 14, \"sort_by_metric\": true, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"pie\", \"remote_id\": 14, \"datasource_name\": \"TagPriceReview\", \"schema\": \"db_steam_product\", \"database_name\": \"MySQL\"}",
+                            "query_context": "{\"datasource\":{\"id\":3,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"granularity\":\"release_date\",\"filters\":[],\"extras\":{\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"tag\"],\"metrics\":[\"count\"],\"orderby\":[[\"count\",false]],\"annotation_layers\":[],\"row_limit\":10000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "\u30bf\u30b0\u5185\u8a33",
+                            "viz_type": "pie"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "column_name": "id",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 23,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "LONG",
+                            "uuid": "53b07879-e103-4cde-9d3c-3141936d8e0a",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "column_name": "status_flag",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 24,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "STRING",
+                            "uuid": "e063c699-fabe-4797-b0bb-956754cbb8ac",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "column_name": "release_date",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 25,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "DATETIME",
+                            "uuid": "17d94be0-458b-486e-a80d-d0f40a3495d0",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "column_name": "price",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 26,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "FLOAT",
+                            "uuid": "3d3615b4-9b86-4e44-a9dc-90c70e8fcbc3",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "column_name": "price_country",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 27,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "STRING",
+                            "uuid": "964090c3-9668-47b3-970c-da691bf0ea1d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "column_name": "review_count",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 28,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "LONG",
+                            "uuid": "3ecdd20f-6e4b-4890-9319-0f351360d14f",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "column_name": "rating_value",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 29,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "LONG",
+                            "uuid": "64ba8ad5-7956-459c-b103-214a652fc504",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "column_name": "tag",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 30,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 3,
+                            "type": "STRING",
+                            "uuid": "eb1e6e10-fc69-444d-99ed-14b3075affe5",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 1,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": null,
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:40:51"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "count(*)",
+                            "extra": null,
+                            "id": 3,
+                            "metric_name": "count",
+                            "metric_type": null,
+                            "table_id": 3,
+                            "uuid": "ba62e136-e7f8-48e6-b44a-b063ae9041db",
+                            "verbose_name": null,
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 3, \"database_name\": \"MySQL\"}",
+                "schema": "db_steam_product",
+                "sql": "SELECT product.id, status_flag, release_date, price, price_country, review_count,  rating_value, tag FROM tag INNER JOIN product ON tag.id =product.id\r",
+                "table_name": "TagPriceReview",
+                "template_params": null
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:42:51"
+                            },
+                            "column_name": "id",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:42:51"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 38,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 6,
+                            "type": "INTEGER(11)",
+                            "uuid": "320ba551-96e3-40b9-87c0-59cac5164686",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:42:51"
+                            },
+                            "column_name": "tag",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:42:51"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 39,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 6,
+                            "type": "CHAR(64)",
+                            "uuid": "6f857ff0-017d-41ba-876d-3d6a4ac042ce",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 1,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": null,
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-11-07T08:42:51"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-11-07T08:42:51"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "extra": null,
+                            "id": 6,
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "table_id": 6,
+                            "uuid": "55a304aa-8864-439a-95ea-3abc7f163458",
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 6, \"database_name\": \"MySQL\"}",
+                "schema": "db_steam_product",
+                "sql": null,
+                "table_name": "tag",
+                "template_params": null
+            }
+        }
+    ]
+}
