@@ -4,7 +4,7 @@ RUN apt update
 
 WORKDIR /data
 
-RUN apt-get install -y python3 python3-pip vim nano
+RUN apt-get install -y python3 python3-pip vim nano mysql-client libmysqlclient-dev
 
 COPY ./setup.sh /boot_scripts/setup.sh
 COPY ./requirements.txt /boot_scripts/requirements.txt
