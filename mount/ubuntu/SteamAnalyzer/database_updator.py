@@ -27,7 +27,8 @@ cur.execute("DELETE FROM discount_price;")
 
 datas = pickle.load(open('steam.pickle', 'rb'))
 
-for d in datas:
+for dk in datas:
+    d = datas[dk]
     if d.status == 'error' or d.status == 'invalid':
         continue
     releaseDate = d.releaseDate

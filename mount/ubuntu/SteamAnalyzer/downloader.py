@@ -54,9 +54,10 @@ if __name__ == '__main__':
                 f.write(res + '\n')
                 if url in response.text:
                     f.write(response.text)
-                    max_loaded_id = id
-                    with open(max_loaded_id_path, 'w') as fm:
-                        fm.write('{}\n'.format(max_loaded_id))
+                    if id > max_loaded_id:
+                        max_loaded_id = id
+                        with open(max_loaded_id_path, 'w') as fm:
+                            fm.write('{}\n'.format(max_loaded_id))
                 else:
                     f.write('[[invalid]]')
             time.sleep(3)
