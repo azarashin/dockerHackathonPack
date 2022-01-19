@@ -25,5 +25,5 @@
 #
 # m h  dom mon dow   command
 
-0 2 * * * /data/daily_task.sh
+0 2 * * * /boot_scripts/daily_task.sh
 
