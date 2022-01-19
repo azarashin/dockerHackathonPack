@@ -2,3 +2,6 @@
 .config.nodes.json
 node_modules
 lib
+
+.config.users.json.backup
+.root_flows.json.backup
