@@ -1,4 +1,9 @@
 docker-compose.yml
-mount/nodered/*
-mount/ubuntu/*
+
+mount/ubuntu/SteamAnalyzer/max_loaded_id.txt
+mount/ubuntu/daily_task.sh
+
+
+mount/nodered/.config.users.json.backup
+mount/nodered/.root_flows.json.backup
 
