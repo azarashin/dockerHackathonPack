@@ -1,2 +1,4 @@
 docker-compose.yml
+mount/nodered/*
+mount/ubuntu/*
 
