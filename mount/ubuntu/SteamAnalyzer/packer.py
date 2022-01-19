@@ -17,7 +17,7 @@ if __name__ == '__main__':
     files = glob.glob("./html/**/**/*.html")
     m = re.compile(r'./html/.+?/.+?/(.+?)\.html', flags=re.DOTALL)
     cnt = 0
-    max_id = max([d for d in datas if datas[d].status == 'active' or datas[d].status == 'closed'])
+    max_id = max([d for d in datas if datas[d].status == 'active' or datas[d].status == 'closed'] + [0])
     for file in files:
         id = m.search(file.replace('\\', '/')).group(1)
         print('\r', id, end='')
