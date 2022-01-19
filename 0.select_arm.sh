@@ -1,1 +1,1 @@
-mv docker-compose.arm.yml docker-compose.yml
+cp docker-compose.arm.yml docker-compose.yml

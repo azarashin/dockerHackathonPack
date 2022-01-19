@@ -1,1 +1,1 @@
-mv docker-compose.intel.yml docker-compose.yml
+cp docker-compose.intel.yml docker-compose.yml
