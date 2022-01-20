@@ -32,7 +32,7 @@ services:
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       TZ: 'Asia/Tokyo'
-    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    restart: always
     volumes:
       - ./mount/db/data:/var/lib/mysql
       - ./mount/db/my.cnf:/etc/mysql/conf.d/my.cnf
