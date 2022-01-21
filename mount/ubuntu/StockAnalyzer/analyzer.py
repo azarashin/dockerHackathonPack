@@ -33,6 +33,8 @@ def analyze(path):
     if len(ana_evals) != 5:
         ana_evals = ['-', '-', '-', '-', '-']
 
+    if len(evals) < 3:
+      evals = [['-','-','-',],['-','-','-',],['-','-','-',],]
     ret = name + [evals[0][2], evals[1][2], evals[2][2]] + current_price + target_price + ana_evals
     return [d.replace('\n', '') for d in ret]
 
