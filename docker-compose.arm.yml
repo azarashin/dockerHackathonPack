@@ -24,7 +24,7 @@ services:
 
   # MySQL
   db:
-    image: lsioarmhf/mariadb
+    image: mariadb:latest
     container_name: ${CONTAINER_BASE_NAME}_mysql_host
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
