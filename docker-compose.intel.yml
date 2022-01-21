@@ -6,6 +6,13 @@ services:
       context: dockerfile/ubuntu
       dockerfile: Dockerfile
     container_name: ${CONTAINER_BASE_NAME}_ubuntu
+    environment:
+      - TZ=Asia/Tokyo
+      # debconf がユーザにインタラクティブに問い合わせるのを回避する
+      # 参考：
+      # https://www.webdevqa.jp.net/ja/ubuntu/dpkgreconfigure-tzdata%E3%81%AE%E9%9D$
+      - DEBIAN_FRONTEND=noninteractive
+      - DEBCONF_NONINTERACTIVE_SEEN=true
     restart: always
     volumes:
       - ./mount/ubuntu:/data
@@ -16,6 +23,7 @@ services:
     environment:
       - FLOWS=${NODE_RED_FLOW}.json
       - NODE_RED_CREDENTIAL_SECRET=${NODE_RED_CREDENTIAL_SECRET}
+      - TZ=Asia/Tokyo
     restart: always
     ports:
       - "${NODE_RED_PORT}:1880"

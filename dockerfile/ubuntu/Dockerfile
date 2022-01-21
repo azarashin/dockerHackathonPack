@@ -4,7 +4,7 @@ RUN apt update
 
 WORKDIR /data
 
-RUN apt-get install -y python3 python3-pip vim nano \
+RUN apt install -y python3 python3-pip vim nano \
 	mysql-client libmysqlclient-dev \
 	cron systemctl
 
@@ -14,6 +14,9 @@ COPY ./daily_task.sh /boot_scripts/daily_task.sh
 
 # https://qiita.com/iganari/items/5a61ec93d989f7c77a2c
 COPY ./crontabs_root.txt /var/spool/cron/crontabs/root
+
+COPY ./preseed.txt /boot_scripts/preseed.txt
+RUN debconf-set-selections /boot_scripts/preseed.txt
 
 RUN pip install -r /boot_scripts/requirements.txt
 
