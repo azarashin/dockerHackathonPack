@@ -109,7 +109,7 @@ class Coconara:
         closed_count_repeatly = 0
         closed_count_repeatly_upper = 100
         for page in range(0, max_page):
-            print('loading page {}...'.format(page))
+            print('loading page {} / {}...'.format(page, max_page))
             works = self.get_works(page)
             for work in works:
                 if work.remainin_days is None:
@@ -132,9 +132,10 @@ class Coconara:
     
     def get_path(self, work):
         id = int(work.id)
-        dir0 = int(id / 10000)
-        dir1 = int(id / 100)
-        dir = 'datas/{}/{}'.format(dir0, dir1)
+        dir0 = int(id / 1000000)
+        dir1 = int(id / 10000)
+        dir2 = int(id / 100)
+        dir = 'datas/{}/{}/{}'.format(dir0, dir1, dir2)
         path = '{}/{}.pickle'.format(dir, id)
         return path, dir
 
