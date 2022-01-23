@@ -12,7 +12,7 @@ import datetime
 import time
 import re
 
-class Work:
+class WorkTask:
     def __init__(self, current_time, content):
         host='https://coconala.com'
         host_request='https://coconala.com/requests/'
@@ -31,7 +31,7 @@ class Work:
         if len(budgets) == 1:
             self.budget = None
         else:
-            self.budget = [Work.budget_to_int(s.text.strip()) for s in budgets]
+            self.budget = [WorkTask.budget_to_int(s.text.strip()) for s in budgets]
         if content.find('span', class_='c-itemTileLine_emphasis-remainingDays') is None:
             self.remainin_days = None
         else:
@@ -86,6 +86,9 @@ class Work:
         return ret
 
 class Coconara:
+    def __init__(self):
+        pass
+
     def max_page(self):
         url = 'https://coconala.com/requests'
         # 403 エラーが出ないようにヘッダを設定しておく
@@ -102,7 +105,7 @@ class Coconara:
         content = self.get_page(page)
         current_time = datetime.datetime.now()
         soup = BeautifulSoup(content, "html.parser")
-        return [Work(current_time, s) for s in soup.find_all('div', class_='c-searchItem')]
+        return [WorkTask(current_time, s) for s in soup.find_all('div', class_='c-searchItem')]
     
     def scan_all_pages(self):
         max_page = self.max_page()
@@ -122,7 +125,7 @@ class Coconara:
                 if not os.path.exists(path):
                     closed_count_repeatly = 0
                 self.write_work(work)
-            time.sleep(2)
+            time.sleep(3)
 
 
     def scan_page(self, page):
@@ -149,14 +152,16 @@ class Coconara:
     
 
 if __name__ == '__main__':
-    coconara = Coconara()
-    coconara.scan_all_pages()
-    works = coconara.get_works(0)
-    print(works[0])
-    with codecs.open('list.csv', 'w', 'utf-8') as f:
-        f.write(Work.line_title())
-        for work in works:
-            f.write(work.line())
+    while True:
+        coconara = Coconara()
+        coconara.scan_all_pages()
+        works = coconara.get_works(0)
+        with codecs.open('list.csv', 'w', 'utf-8') as f:
+            f.write(WorkTask.line_title())
+            for work in works:
+                f.write(work.line())
+        print('Coconara downloader is sleeping.')
+        time.sleep(3600) # 1時間ほど適当に休む
 
 
 
