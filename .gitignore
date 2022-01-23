@@ -5,3 +5,5 @@ mount/ubuntu/daily_task.sh
 
 
 mount/ubuntu/CoconaraAnalyzer/datas/
+mount/ubuntu/CoconaraAnalyzer/__pycache__/
+mount/ubuntu/CoconaraAnalyzer/list.csv
