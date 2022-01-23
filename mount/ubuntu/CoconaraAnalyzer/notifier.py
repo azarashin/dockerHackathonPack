@@ -1,15 +1,10 @@
+# coding: utf-8
+
 from email.mime.text import MIMEText
 import smtplib
 import json
 
-class Work:
-    def __init__(self, title, url, detail):
-        self.title = title
-        self.url = url
-        self.detail = detail
-    
-    def __str__(self):
-        return '<h2><a href="{}">{}</h2><a>{}</a>'.format(self.url, self.title, self.detail)
+from work import Work
 
 class Notifier:
     def __init__(self):
@@ -24,10 +19,12 @@ class Notifier:
         self.from_email = env["email_from"]
 
     def notify(self, works):
+        print('active works: {}\n'.format(len(works)))
+        show_max = 10
 
         # MIMEの作成
         subject = "新しい仕事が見つかりました"
-        message = '\n\n'.join([str(s) for s in works])
+        message = '\n\n'.join([str(s) for s in works[:show_max]])
         msg = MIMEText(message, "html")
         msg["Subject"] = subject
         msg["To"] = self.to_email
