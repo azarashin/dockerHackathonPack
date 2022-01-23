@@ -16,5 +16,10 @@ python3 packer.py && python3 database_updator.py
 echo "Finish SteamAnalyzer" >> /data/last_update.log
 date >> /data/last_update.log
 
+echo "Start CoconaraAnalyzer" >> /data/last_update.log
 
+cd /data/CoconaraAnalyzer
+python3 analyzer.py
 
+echo "Finish CoconaraAnalyzer" >> /data/last_update.log
+date >> /data/last_update.log

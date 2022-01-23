@@ -9,6 +9,9 @@ python3 downloader.py &
 cd /data/SteamAnalyzer
 python3 downloader.py &
 
+cd /data/CoconaraAnalyzer
+python3 downloader.py &
+
 systemctl start cron
 
 while :
