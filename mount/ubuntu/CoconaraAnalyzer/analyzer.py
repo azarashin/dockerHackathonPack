@@ -42,6 +42,6 @@ if __name__=='__main__':
     user_manager = UserManager()
     targets = analyzer.scan(False)
     active_works = [Work(t.title, t.title_link, t.description, t.user_link, user_manager) for t in targets 
-        if analyzer.match(t, ['ワードプレス'])]
+        if analyzer.match(t, ['Unity'])]
     notifier = Notifier()
     notifier.notify(active_works)
